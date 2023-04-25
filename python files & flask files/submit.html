@@ -1,0 +1,23 @@
+ <!DOCUMENT html>
+<htmnl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>thyroid disease</title>
+    </head>
+    <body bgcolor="blue">
+    <h1>THYROID DISEASE CLASSIFICATION USING MACHINE LEARNING</h1>
+    <from action = "{{url_for('predict')}}" method = "post">
+        GOITRE<input type="number" name="goitre" id="goitre">
+        TUMOR<input type="number" name="tumor" id="tumor">
+        PSYCH<input type="number" name="psych" id="psych">
+        TSH<input type="number" name="TSH" id="TSH">
+        T3<input type="number" name="T3" id="T3">
+        TT4<input type="number" name="TT4" id="TT4">
+        T4U<input type="number" name="T4U" id="T4U">
+        FTI<input type="number" name="FTI" id="FTI">
+        TBG<input type="number" name="TBG" id="TBG">
+<button type="submit">Predict</button>
+   </from>
+    <h1>Based on the given input, it predict thyroid disease for your body condition is ['miscellaneous']</h1>
+    </body>
+</htmnl>
